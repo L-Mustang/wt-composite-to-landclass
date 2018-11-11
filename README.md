@@ -2,7 +2,7 @@
 
 A few batch scripts that will convert a composit exported in the Location Editor to a matrix that can be used in a landclass.
 
-Don't try to do this with composits extracted from the game archives! It will not work! Please create your own compositits using the Location Editor
+Don't try to do this with composits extracted from the game archives, it will not work! Please create your own composits using the Location Editor
 
 ## Installation
 1. Unzip
