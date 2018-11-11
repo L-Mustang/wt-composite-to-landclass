@@ -1,0 +1,26 @@
+className:t="composit"
+
+node{
+  tm:m=[[1, 0, 0] [0, 1, 0] [0, 0, 1] [0, 0, 0]]
+
+  node{
+    type:t="rendInst"
+    name:t="brvillagehouse01"
+    tm:m=[[1, 0, 0] [0, 1, 0] [0, 0, 1] [0, 0, 0]]
+    place_type:i=1
+  }
+
+  node{
+    type:t="rendInst"
+    name:t="brvillagehouse01"
+    tm:m=[[1, 0, 0] [0, 1, 0] [0, 0, 1] [2.82996, -1.1434, -34.737]]
+    place_type:i=1
+  }
+
+  node{
+    type:t="rendInst"
+    name:t="brvillagehouse01"
+    tm:m=[[1, 0, 0] [0, 1, 0] [0, 0, 1] [34.9399, -0.135315, -12.785]]
+    place_type:i=1
+  }
+}
