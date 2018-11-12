@@ -6,16 +6,19 @@ set _filename="%~nx1"
 set _name=%_filename:.composit=_objects%
 set _newfile= %_name%
 set _finalfile= %_name%
-set _temp= "landclass_objects_1.tmp"
+set _temp= %_name%.tmp1
+set _temp2= %_name%.tmp2
 
 echo %_name%
 
 type %_file% | findstr /v type | findstr /v className> %_newfile%
-type %_newfile%  | repl "\bnode\b" "object" | repl "\btm\b" "matrix" >%_newfile%
 
-more +4 %_newfile%  > %_temp%
+type %_newfile%  | call jrepl "\bnode\b" "object" | call jrepl "\btm\b" "matrix" >%_temp2%
+
+more +4 %_temp2%  > %_temp%
 copy /Y %_temp% %_newfile%
 del %_temp%
+del %_temp2%
 
 
 @echo colliders{                               >>%_temp%
